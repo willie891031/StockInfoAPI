@@ -16,6 +16,7 @@ namespace StockAPI.App_Start
             Hangfire.GlobalConfiguration.Configuration.UseMemoryStorage();
             app.UseHangfireDashboard();
             app.UseHangfireServer();
+            JobConfig.SetJob();
         }
     }
 }
